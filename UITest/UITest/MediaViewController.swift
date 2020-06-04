@@ -10,17 +10,32 @@ import UIKit
 
 class MediaViewController: UIViewController {
     var labelString: String = ""
-    var cnt = 0
+    var mediaString: String = "default"
+    var subString: String = " "
+    static var cnt = 0
+    @IBOutlet weak var DONE: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if(MediaViewController.cnt < 2) {
+            DONE.isEnabled = false
+        }
 
-        
+
+        // Do any additional setup after loading the view.
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cvc = segue.destination as? FoodViewController{
             cvc.labelString = labelString
+            cvc.mediaString = mediaString
+            cvc.subString = subString
             
         }
         if let cvc = segue.destination as? MediaThemeViewController{
-        cvc.labelString = labelString
+            cvc.labelString = labelString
+            cvc.mediaString = mediaString
+            cvc.subString = subString
             
         }
         
@@ -28,10 +43,10 @@ class MediaViewController: UIViewController {
         
      }
     
+ 
     
-    @IBAction func DONE(_ sender: UIButton) {
-        print(cnt)
-        print("label: "+labelString)
+    func setUIButtonUnable(on button: UIButton){
+        button.isEnabled = false
     }
-    
+
 }

@@ -10,9 +10,9 @@ import UIKit
 
 class FoodViewController: UIViewController {
 
- 
     var labelString: String = ""
-
+    var mediaString: String = "default"
+    var subString: String = " "
 
     
     // MARK: - Navigation
@@ -32,7 +32,10 @@ class FoodViewController: UIViewController {
     }
     
     func aaa(on button: UIButton){
-        print(labelString + (button.currentTitle ?? "err"))
+        let str = labelString + mediaString + (button.currentTitle ?? "err") + "\n"
+        let sub = "(혹은 " + subString + (button.currentTitle ?? "err") + " 일지도...)"
+        print(str + sub)
+     
     }
     
 }

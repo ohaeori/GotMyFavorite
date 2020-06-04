@@ -21,13 +21,14 @@ class ColorViewController: UIViewController {
        // Pass the selected object to the new view controller.
         if let cvc = segue.destination as? MediaViewController{
             if let label = segue.identifier{
-            
                 cvc.labelString = color[label]![3.arc4random]
                 
             }
         
        }
     }
+
+
 }
 
 extension Int {
