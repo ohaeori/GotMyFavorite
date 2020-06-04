@@ -14,6 +14,8 @@ class FoodViewController: UIViewController {
     var labelString: String = ""
     var mediaString: String = "default"
     var subString: String = " "
+    var mainTitle: String = "none"
+    var subTitle: String = " "
    
     
     
@@ -40,9 +42,13 @@ class FoodViewController: UIViewController {
     }
     
     func aaa(on button: UIButton){
-        let str = labelString + mediaString + (button.currentTitle ?? "err") + "\n"
-        let sub = "(혹은 " + subString + (button.currentTitle ?? "err") + " 일지도...)"
-        Label.text = str + sub
+        if (mainTitle == "none") {
+            mainTitle = labelString + mediaString + (button.currentTitle ?? "err") + "\n"
+        }
+        else {
+            subTitle = "(혹은 " + subString + (button.currentTitle ?? "err") + " 일지도...)"
+            Label.text = mainTitle + subTitle
+        }        
      
     }
     

@@ -36,6 +36,7 @@ class MediaViewController: UIViewController {
             cvc.labelString = labelString
             cvc.mediaString = mediaString
             cvc.subString = subString
+            cvc.themeString = segue.identifier ?? " "
             
         }
         

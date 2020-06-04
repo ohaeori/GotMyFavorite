@@ -366,7 +366,6 @@
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btn2:" destination="gBB-Zd-ocV" eventType="touchUpInside" id="qsp-wy-UIM"/>
                                                     <segue destination="kv0-Wa-8LS" kind="showDetail" identifier="역동적 " id="RsU-Ac-axM"/>
                                                 </connections>
                                             </button>
@@ -457,10 +456,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="urv-xA-63L"/>
                     </view>
+                    <connections>
+                        <outlet property="btn1" destination="vJq-qG-ruh" id="Mwi-cf-G99"/>
+                        <outlet property="btn2" destination="Wrz-6P-Obf" id="qSo-6d-vC4"/>
+                        <outlet property="btn3" destination="eiD-r5-14I" id="hYW-uy-pkp"/>
+                        <outlet property="btn4" destination="Dp3-gN-36T" id="T47-Nn-300"/>
+                        <outlet property="btn5" destination="ASn-WF-SXG" id="au9-cc-V5S"/>
+                        <outlet property="btn6" destination="C9q-to-J1Q" id="Wxd-FM-ojr"/>
+                        <outlet property="btn7" destination="b8g-fo-B1Q" id="hdb-EJ-XSy"/>
+                        <outlet property="btn8" destination="BJx-QN-fKY" id="rCE-eK-BI2"/>
+                        <outlet property="btn9" destination="kty-KY-RzC" id="4T2-Gx-FSl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOE-zo-wNo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11394" y="895"/>
+            <point key="canvasLocation" x="-10454" y="929"/>
         </scene>
         <!--Food View Controller-->
         <scene sceneID="ZWE-y8-8XM">
@@ -492,10 +502,13 @@
                                                 <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="130.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Steak">
+                                                <state key="normal" title="Steak" backgroundImage="steak.jpg">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btn:" destination="FIz-B8-bve" eventType="touchUpInside" id="Yiy-Ar-CYP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgU-qY-5jr">
                                                 <rect key="frame" x="254.66666666666671" y="0.0" width="119.33333333333334" height="130.66666666666666"/>
@@ -505,6 +518,9 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btn:" destination="FIz-B8-bve" eventType="touchUpInside" id="Z4E-9v-Qfr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -635,5 +651,6 @@
         <image name="news.jpg" width="640" height="427"/>
         <image name="pet.jpg" width="640" height="377"/>
         <image name="sports.jpg" width="640" height="427"/>
+        <image name="steak.jpg" width="640" height="427"/>
     </resources>
 </document>
