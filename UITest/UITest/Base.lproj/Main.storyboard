@@ -361,12 +361,13 @@
                                                 <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="130.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Orange">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Action" backgroundImage="movieAction.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="btn2:" destination="gBB-Zd-ocV" eventType="touchUpInside" id="qsp-wy-UIM"/>
+                                                    <segue destination="kv0-Wa-8LS" kind="showDetail" identifier="역동적 " id="RsU-Ac-axM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiD-r5-14I">
@@ -491,8 +492,8 @@
                                                 <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="130.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Orange">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Steak">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -573,6 +574,13 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAD-Qb-PvC">
+                                <rect key="frame" x="88" y="170" width="261" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -584,6 +592,9 @@
                         <viewLayoutGuide key="safeArea" id="spe-Wq-zlg"/>
                     </view>
                     <navigationItem key="navigationItem" id="wzK-po-mJi"/>
+                    <connections>
+                        <outlet property="Label" destination="VAD-Qb-PvC" id="Qrk-2W-zQB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zd1-Qj-k9N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -609,8 +620,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="e62-Xw-nIS"/>
-        <segue reference="Mno-Qs-fG3"/>
+        <segue reference="RsU-Ac-axM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Movie.jpg" width="640" height="433"/>
@@ -619,6 +629,7 @@
         <image name="entertainment.jpg" width="640" height="960"/>
         <image name="game.jpg" width="640" height="427"/>
         <image name="love.jpg" width="640" height="427"/>
+        <image name="movieAction.png" width="746" height="453"/>
         <image name="movieSF.png" width="387" height="484"/>
         <image name="music.jpg" width="640" height="471"/>
         <image name="news.jpg" width="640" height="427"/>

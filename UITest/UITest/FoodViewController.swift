@@ -9,11 +9,19 @@
 import UIKit
 
 class FoodViewController: UIViewController {
-
+    @IBOutlet weak var Label: UILabel!
+    
     var labelString: String = ""
     var mediaString: String = "default"
     var subString: String = " "
+   
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
+    }
     
     // MARK: - Navigation
 
@@ -34,7 +42,7 @@ class FoodViewController: UIViewController {
     func aaa(on button: UIButton){
         let str = labelString + mediaString + (button.currentTitle ?? "err") + "\n"
         let sub = "(혹은 " + subString + (button.currentTitle ?? "err") + " 일지도...)"
-        print(str + sub)
+        Label.text = str + sub
      
     }
     

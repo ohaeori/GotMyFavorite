@@ -13,6 +13,7 @@ class MediaThemeViewController: UIViewController {
     var labelString: String = ""
     var mediaString: String = "default"
     var subString: String = " "
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
