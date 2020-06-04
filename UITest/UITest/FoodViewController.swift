@@ -28,7 +28,11 @@ class FoodViewController: UIViewController {
     }
     
     @IBAction func btn(_ sender: UIButton) {
-        print(labelString)
+        aaa(on: sender)
+    }
+    
+    func aaa(on button: UIButton){
+        print(labelString + (button.currentTitle ?? "err"))
     }
     
 }

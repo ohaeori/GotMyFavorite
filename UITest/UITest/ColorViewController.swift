@@ -13,7 +13,7 @@ class ColorViewController: UIViewController {
     var labelString: String = ""
     var count = arc4random_uniform(2)
     var color : [String:[String]] = [
-        "Red": ["열정의","혁명의","위험한"]
+        "Red": ["열정의 ","혁명의 ","위험한 "]
     ]
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -17,10 +17,10 @@ class MediaThemeViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cvc = segue.destination as? MediaViewController{
-
-            cvc.themeString = segue.identifier ?? "????"
+            let str: String = segue.identifier ?? "??"
+            cvc.labelString = labelString + str
         }
+        
     }
     
-
 }

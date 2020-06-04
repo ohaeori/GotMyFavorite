@@ -10,19 +10,18 @@ import UIKit
 
 class MediaViewController: UIViewController {
     var labelString: String = ""
-    var themeString: String = ""
     var cnt = 0
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
-    }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cvc = segue.destination as? FoodViewController{
-            let str = labelString + " " + themeString
-            cvc.labelString = str
+            cvc.labelString = labelString
+            
+        }
+        if let cvc = segue.destination as? MediaThemeViewController{
+        cvc.labelString = labelString
+            
         }
         
         
@@ -32,8 +31,7 @@ class MediaViewController: UIViewController {
     
     @IBAction func DONE(_ sender: UIButton) {
         print(cnt)
-        print(labelString)
-        print(themeString)
+        print("label: "+labelString)
     }
     
 }
