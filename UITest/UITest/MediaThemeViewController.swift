@@ -27,16 +27,14 @@ class MediaThemeViewController: UIViewController {
     var themeString: String = " "
     var btnArr: [UIButton] = []
     var theme : [String:[String]] = [
-        "Movie": ["movieSF","movieAction","movieComedy","movieThriller","movieWar","movieSports","movieFantasy","movieMusic","movieMelo"],
-        "Drama" : ["유쾌한 ","의리있는 ","호기심 많은 "],
-        "Yellow": ["낙천적인 ","밝은 ","활력 있는 "],
-        "Green": ["자연적인 ","성실한 ","도덕적인 "],
-        "Blue": ["자유로운 ","침착한 ","차분한 "],
-        "Indigo": ["지적인 ","신뢰 가는 ","신비로운 "],
-        "Purple": ["개성 넘치는 ","고귀한 ","신성한 "],
-        "Back": ["책임감 넘치는 ","야망 있는 ","우아한 "],
-        "White": ["헌신적인 ","근심 많은 ","생각 깊은 "]
+        "Movie": ["최첨단","역동적인","유머 있는","소름 돋는","학살 하는","경쟁 하는","환상적인","리듬감 있는","사랑스러운"],
+        "Drama" : ["가정적인","경제적인","무시무시한","내공이 뛰어난","피해를 주는","알고싶은","답답한","흰 가운을 입은","역사적인"]
     ]
+    var themeTitle : [String:[String]] = [
+        "Movie": ["SF","Action","Comedy","Thriller","War","Sports","Fantasy","Music","Melo"],
+        "Drama" : ["가족","경제","공포","무협","범죄","미스테리","정치","의학","사극"]
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         btnArr.append(btn1)
@@ -51,6 +49,7 @@ class MediaThemeViewController: UIViewController {
         for i: Int in 0..<9 {
             let str = theme[themeString]![i]
             btnArr[i].setBackgroundImage( UIImage(named: str), for:.normal)
+            btnArr[i].setTitle(themeTitle[themeString]![i], for: .normal)
 
         }
         
@@ -62,11 +61,11 @@ class MediaThemeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cvc = segue.destination as? MediaViewController{
             if (MediaViewController.cnt == 0) {
-                cvc.mediaString = segue.identifier ?? "??"
+                cvc.mediaString = theme[themeString]![Int(segue.identifier ?? "0") ?? 0] + " "
             }
             else {
-                cvc.subString = segue.identifier ?? "??"
-                cvc.mediaString = mediaString
+                cvc.subString = theme[themeString]![Int(segue.identifier ?? "0") ?? 0] + " "
+                cvc.mediaString = mediaString + " "
             }
             cvc.labelString = labelString
             MediaViewController.cnt += 1

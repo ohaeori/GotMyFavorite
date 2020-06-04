@@ -19,6 +19,13 @@ class MediaViewController: UIViewController {
         super.viewDidLoad()
         if(MediaViewController.cnt < 2) {
             DONE.isEnabled = false
+            if (MediaViewController.cnt == 0) {
+                DONE.setTitle("none\nSelected", for: .normal)
+            }
+            else {
+                DONE.setTitle("one\nSelected", for: .normal)
+            }
+            
         }
 
 
