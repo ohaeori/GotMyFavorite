@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Color View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UITest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ColorViewController" customModule="UITest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,21 +196,20 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aa-xQ-HPh">
                                                 <rect key="frame" x="0.0" y="0.0" width="119.5" height="130.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Movie" image="jakob-owens-CiUR8zISX60-unsplash.jpg">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                                <state key="normal" title="Movie" backgroundImage="Movie.jpg">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="gBB-Zd-ocV" kind="showDetail" identifier="Movie" id="e62-Xw-nIS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tl9-3a-umz">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tl9-3a-umz">
                                                 <rect key="frame" x="127.5" y="0.0" width="119" height="130.5"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Orange">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="drama" backgroundImage="drama.jpg">
+                                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -218,8 +217,8 @@
                                                 <rect key="frame" x="254.5" y="0.0" width="119.5" height="130.5"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Yellow">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Entertain" backgroundImage="entertainment.jpg">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -232,8 +231,8 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="119.5" height="131"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Green">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Game" backgroundImage="game.jpg">
+                                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -241,7 +240,7 @@
                                                 <rect key="frame" x="127.5" y="0.0" width="119" height="131"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Blue">
+                                                <state key="normal" title="Love" backgroundImage="love.jpg">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -250,7 +249,7 @@
                                                 <rect key="frame" x="254.5" y="0.0" width="119.5" height="131"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Indigo">
+                                                <state key="normal" title="Music" backgroundImage="music.jpg">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -264,7 +263,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="119.5" height="130.5"/>
                                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Purple">
+                                                <state key="normal" title="News" backgroundImage="news.jpg">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -273,7 +272,7 @@
                                                 <rect key="frame" x="127.5" y="0.0" width="119" height="130.5"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Black">
+                                                <state key="normal" title="Pet" backgroundImage="pet.jpg">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -282,8 +281,8 @@
                                                 <rect key="frame" x="254.5" y="0.0" width="119.5" height="130.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="White">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Sports" backgroundImage="sports.jpg">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -291,8 +290,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sch-Bf-seG">
-                                <rect key="frame" x="180" y="183" width="54" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sch-Bf-seG">
+                                <rect key="frame" x="118" y="158" width="178" height="59"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="DONE"/>
                                 <connections>
@@ -304,12 +303,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ajY-Qh-Py1" firstAttribute="bottom" secondItem="zZw-68-wEp" secondAttribute="bottom" constant="150" id="Cm7-65-HOS"/>
-                            <constraint firstItem="sch-Bf-seG" firstAttribute="leading" secondItem="ajY-Qh-Py1" secondAttribute="leading" constant="180" id="H5p-Bi-uEM"/>
+                            <constraint firstItem="sch-Bf-seG" firstAttribute="leading" secondItem="ajY-Qh-Py1" secondAttribute="leading" constant="118" id="H5p-Bi-uEM"/>
                             <constraint firstItem="ajY-Qh-Py1" firstAttribute="trailing" secondItem="zZw-68-wEp" secondAttribute="trailing" constant="20" id="IoE-V5-YGN"/>
                             <constraint firstItem="zZw-68-wEp" firstAttribute="top" secondItem="ajY-Qh-Py1" secondAttribute="top" constant="250" id="JiX-LT-cId"/>
                             <constraint firstItem="zZw-68-wEp" firstAttribute="leading" secondItem="ajY-Qh-Py1" secondAttribute="leading" constant="20" id="LQA-Qg-xgq"/>
                             <constraint firstItem="sch-Bf-seG" firstAttribute="centerX" secondItem="zZw-68-wEp" secondAttribute="centerX" id="ogU-go-AYq"/>
-                            <constraint firstItem="sch-Bf-seG" firstAttribute="top" secondItem="ajY-Qh-Py1" secondAttribute="top" constant="183" id="xcC-mg-DgR"/>
+                            <constraint firstItem="sch-Bf-seG" firstAttribute="top" secondItem="ajY-Qh-Py1" secondAttribute="top" constant="158" id="xcC-mg-DgR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ajY-Qh-Py1"/>
                     </view>
@@ -361,8 +360,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdi-dX-dH0">
                                                 <rect key="frame" x="0.0" y="0.0" width="119.5" height="130.5"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="rice" image="baiq-daling-ykThMylLsbY-unsplash.jpg">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Chicken" backgroundImage="chicken.jpg">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -473,11 +473,19 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vkT-24-rfe"/>
+        <segue reference="Yi4-lK-FmB"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="baiq-daling-ykThMylLsbY-unsplash.jpg" width="2766" height="4032"/>
-        <image name="jakob-owens-CiUR8zISX60-unsplash.jpg" width="640" height="433"/>
+        <image name="Movie.jpg" width="5398" height="3648"/>
+        <image name="chicken.jpg" width="640" height="960"/>
+        <image name="drama.jpg" width="640" height="427"/>
+        <image name="entertainment.jpg" width="640" height="960"/>
+        <image name="game.jpg" width="640" height="427"/>
+        <image name="love.jpg" width="640" height="427"/>
         <image name="movieSF.png" width="387" height="484"/>
+        <image name="music.jpg" width="640" height="471"/>
+        <image name="news.jpg" width="640" height="427"/>
+        <image name="pet.jpg" width="640" height="377"/>
+        <image name="sports.jpg" width="640" height="427"/>
     </resources>
 </document>
