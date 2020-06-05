@@ -32,7 +32,7 @@ class SignUpViewController: UIViewController {
         var valid = true
         for i in 0 ..< informTextField.count {
             if let information = informTextField[i].text{
-                if(information == ""){
+                if information == "" {
                     valid = false
                     break
                 } else {
@@ -56,8 +56,8 @@ class SignUpViewController: UIViewController {
         if valid == false {//error message
             showalertMessage(const: 336, mesg: "Fill the blank")
         } else {
-            if inform[2] == inform[3] {
-                User.addUser(id: inform[0], pwd: inform[1], name: inform[2], gender: gender)
+            if inform[1] == inform[2] {
+                User.addUser(id: inform[0], pwd: inform[1], name: inform[3], gender: gender)
                 showalertMessage(const: 336, mesg: "Sign Up Succeed")
             } else {//error message
                 showalertMessage(const: 336, mesg: "Dismatch password")
@@ -86,7 +86,7 @@ class SignUpViewController: UIViewController {
         
         //attributedString. set Color
         let attributedString = NSMutableAttributedString(string: alterMessageLabel.text!)
-        if(mesg == "Fill the blank" || mesg == "dismatch password"){
+        if(mesg == "Fill the blank" || mesg == "Dismatch password"){
             alterMessageLabel.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 0.7956175086)
         } else {
             alterMessageLabel.textColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)

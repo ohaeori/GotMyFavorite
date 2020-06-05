@@ -25,7 +25,7 @@ class ViewController: UIViewController {
             logoTopConstraintHeight.constant = 80
         }
         
-        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
                 self.view.layoutIfNeeded()
             }, completion: nil)
     }
@@ -33,31 +33,11 @@ class ViewController: UIViewController {
     @IBAction func didSignIn(_ sender: UIButton) {
         var userid:String = ""
         var userpwd:String = ""
-        var valid = true
         if let id = idTextField.text,
             let pwd = pwdTextField.text{
             userid = id
             userpwd = pwd
         } else {
-            valid = false
-        }
-        
-        if(!valid){
-            //error message
-            UIView.animate(withDuration: 0.1, animations: {
-                self.idTextField.frame.origin.x -= 10
-                self.pwdTextField.frame.origin.x -= 10
-            }, completion: { _ in
-                UIView.animate(withDuration: 0.1, animations: {
-                    self.idTextField.frame.origin.x += 20
-                    self.pwdTextField.frame.origin.x += 20
-                }, completion: { _ in
-                    UIView.animate(withDuration: 0.1, animations: {
-                        self.idTextField.frame.origin.x -= 10
-                        self.pwdTextField.frame.origin.x -= 10
-                    })
-                })
-            })
         }
         
         let signinsuccess = User.isUser(id: userid, pwd: userpwd)
@@ -68,17 +48,21 @@ class ViewController: UIViewController {
             next?.modalTransitionStyle = .coverVertical
             self.present(next!, animated: true, completion: nil)
         } else {//fail login
-            UIView.animate(withDuration: 0.1, animations: {
+            UIView.animate(withDuration: 0.05, animations: {
                 self.idTextField.frame.origin.x -= 10
                 self.pwdTextField.frame.origin.x -= 10
+                self.idTextField.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 0.3964041096)
+                self.pwdTextField.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 0.4)
             }, completion: { _ in
-                UIView.animate(withDuration: 0.1, animations: {
+                UIView.animate(withDuration: 0.05, animations: {
                     self.idTextField.frame.origin.x += 20
                     self.pwdTextField.frame.origin.x += 20
                 }, completion: { _ in
-                    UIView.animate(withDuration: 0.1, animations: {
+                    UIView.animate(withDuration: 0.05, animations: {
                         self.idTextField.frame.origin.x -= 10
                         self.pwdTextField.frame.origin.x -= 10
+                        self.idTextField.backgroundColor = #colorLiteral(red: 0.6928148866, green: 0.7800933719, blue: 0.9181832075, alpha: 1)
+                        self.pwdTextField.backgroundColor = #colorLiteral(red: 0.6928148866, green: 0.7800933719, blue: 0.9181832075, alpha: 1)
                     })
                 })
             })
@@ -98,4 +82,3 @@ class ViewController: UIViewController {
           self.view.endEditing(true)
     }
 }
-
