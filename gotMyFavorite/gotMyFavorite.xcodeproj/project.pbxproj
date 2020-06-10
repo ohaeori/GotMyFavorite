@@ -12,7 +12,6 @@
 		2CBF570C247FC4B70093A343 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF570B247FC4B70093A343 /* SignInViewController.swift */; };
 		2CBF5711247FC4B80093A343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF5710247FC4B80093A343 /* Assets.xcassets */; };
 		2CBF5714247FC4B80093A343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF5712247FC4B80093A343 /* LaunchScreen.storyboard */; };
-		2CEBF2C324907BC600C1DBB1 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBF27724907BC600C1DBB1 /* SocketIOManager.swift */; };
 		2CEBF2C424907BC600C1DBB1 /* getFavorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CEBF27824907BC600C1DBB1 /* getFavorite.storyboard */; };
 		2CEBF2C524907BC600C1DBB1 /* chicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CEBF27C24907BC600C1DBB1 /* chicken.jpg */; };
 		2CEBF2C624907BC600C1DBB1 /* steak.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CEBF27D24907BC600C1DBB1 /* steak.jpg */; };
@@ -77,6 +76,8 @@
 		2CEBF30224907BC600C1DBB1 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBF2C224907BC600C1DBB1 /* FoodViewController.swift */; };
 		2CEBF306249083AC00C1DBB1 /* 통실통실한.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CEBF305249083AC00C1DBB1 /* 통실통실한.png */; };
 		2CEBF3092490903D00C1DBB1 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 2CEBF3082490903D00C1DBB1 /* SocketIO */; };
+		2CEBF30B2490945000C1DBB1 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBF30A2490945000C1DBB1 /* SocketIOManager.swift */; };
+		2CEBF30D249094FB00C1DBB1 /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBF30C249094FB00C1DBB1 /* MatchingViewController.swift */; };
 		63033EBF24907FBB00DAD5B8 /* 작은.png in Resources */ = {isa = PBXBuildFile; fileRef = 63033EB824907FBB00DAD5B8 /* 작은.png */; };
 		63033EC024907FBB00DAD5B8 /* 도도한.png in Resources */ = {isa = PBXBuildFile; fileRef = 63033EB924907FBB00DAD5B8 /* 도도한.png */; };
 		63033EC124907FBB00DAD5B8 /* 간이 배 밖으로 나온.png in Resources */ = {isa = PBXBuildFile; fileRef = 63033EBA24907FBB00DAD5B8 /* 간이 배 밖으로 나온.png */; };
@@ -97,7 +98,6 @@
 		2CBF5710247FC4B80093A343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CBF5713247FC4B80093A343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CBF5715247FC4B80093A343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CEBF27724907BC600C1DBB1 /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 		2CEBF27924907BC600C1DBB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/getFavorite.storyboard; sourceTree = "<group>"; };
 		2CEBF27C24907BC600C1DBB1 /* chicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chicken.jpg; sourceTree = "<group>"; };
 		2CEBF27D24907BC600C1DBB1 /* steak.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steak.jpg; sourceTree = "<group>"; };
@@ -161,6 +161,8 @@
 		2CEBF2C124907BC600C1DBB1 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		2CEBF2C224907BC600C1DBB1 /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		2CEBF305249083AC00C1DBB1 /* 통실통실한.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "통실통실한.png"; sourceTree = "<group>"; };
+		2CEBF30A2490945000C1DBB1 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SocketIOManager.swift; path = ../../../gotMyFavorite/gotMyFavorite/gotMyFavorite/SocketIOManager.swift; sourceTree = "<group>"; };
+		2CEBF30C249094FB00C1DBB1 /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
 		63033EB824907FBB00DAD5B8 /* 작은.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "작은.png"; sourceTree = "<group>"; };
 		63033EB924907FBB00DAD5B8 /* 도도한.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "도도한.png"; sourceTree = "<group>"; };
 		63033EBA24907FBB00DAD5B8 /* 간이 배 밖으로 나온.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "간이 배 밖으로 나온.png"; sourceTree = "<group>"; };
@@ -208,6 +210,8 @@
 				63D5043224905BBD0004D677 /* signInUp */,
 				2CBF5715247FC4B80093A343 /* Info.plist */,
 				2CEBF27624907BC600C1DBB1 /* getFavorite */,
+				2CEBF30A2490945000C1DBB1 /* SocketIOManager.swift */,
+				2CEBF30C249094FB00C1DBB1 /* MatchingViewController.swift */,
 			);
 			path = gotMyFavorite;
 			sourceTree = "<group>";
@@ -226,7 +230,6 @@
 		2CEBF27624907BC600C1DBB1 /* getFavorite */ = {
 			isa = PBXGroup;
 			children = (
-				2CEBF27724907BC600C1DBB1 /* SocketIOManager.swift */,
 				2CEBF27824907BC600C1DBB1 /* getFavorite.storyboard */,
 				2CEBF27A24907BC600C1DBB1 /* image */,
 				2CEBF2BF24907BC600C1DBB1 /* MediaThemeViewController.swift */,
@@ -549,10 +552,11 @@
 				2CEBF30024907BC600C1DBB1 /* MediaViewController.swift in Sources */,
 				63D5043124905B8F0004D677 /* UserModel.swift in Sources */,
 				2CEBF2FF24907BC600C1DBB1 /* MediaThemeViewController.swift in Sources */,
+				2CEBF30D249094FB00C1DBB1 /* MatchingViewController.swift in Sources */,
 				2CEBF30224907BC600C1DBB1 /* FoodViewController.swift in Sources */,
-				2CEBF2C324907BC600C1DBB1 /* SocketIOManager.swift in Sources */,
 				2CEBF30124907BC600C1DBB1 /* ColorViewController.swift in Sources */,
 				2CBF570A247FC4B70093A343 /* SceneDelegate.swift in Sources */,
+				2CEBF30B2490945000C1DBB1 /* SocketIOManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

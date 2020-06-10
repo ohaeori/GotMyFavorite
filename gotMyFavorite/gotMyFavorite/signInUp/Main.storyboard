@@ -320,30 +320,55 @@
             </objects>
             <point key="canvasLocation" x="934.78260869565224" y="126.5625"/>
         </scene>
-        <!--Next View Controller-->
-        <scene sceneID="jpG-LO-w3e">
+        <!--Matching View Controller-->
+        <scene sceneID="PXN-YM-cOi">
             <objects>
-                <viewController storyboardIdentifier="NextViewController" id="9Ty-0G-kGx" customClass="NextViewController" customModule="gotMyFavorite" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Y76-p7-SrM">
+                <viewController storyboardIdentifier="MatchingViewController" id="9b1-lr-7sl" customClass="MatchingViewController" customModule="gotMyFavorite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PAj-S3-Pqb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MAIN PAGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCY-QB-Flj">
-                                <rect key="frame" x="158" y="407" width="98" height="82"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFx-sq-OjE">
+                                <rect key="frame" x="138" y="325" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="s"/>
+                                <connections>
+                                    <action selector="sendData:" destination="9b1-lr-7sl" eventType="touchUpInside" id="JUg-Ke-EMd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDF-wZ-jgk">
+                                <rect key="frame" x="283" y="165" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="d"/>
+                                <connections>
+                                    <action selector="disconnetSocket:" destination="9b1-lr-7sl" eventType="touchUpInside" id="1Ow-T7-8V4"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BYJ-V0-hlm">
+                                <rect key="frame" x="130" y="474" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XH4-3H-RXa">
+                                <rect key="frame" x="80" y="152" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="c"/>
+                                <connections>
+                                    <action selector="connectSocket:" destination="9b1-lr-7sl" eventType="touchUpInside" id="i9d-zi-JVw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="THf-V9-qcd"/>
+                        <viewLayoutGuide key="safeArea" id="LnV-A4-D2L"/>
                     </view>
-                    <navigationItem key="navigationItem" id="172-FS-yQJ"/>
+                    <connections>
+                        <outlet property="textField" destination="BYJ-V0-hlm" id="103-zY-Ph9"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fld-d2-aH1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J27-Cw-VkT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857" y="127"/>
+            <point key="canvasLocation" x="1725" y="127"/>
         </scene>
     </scenes>
     <resources>
