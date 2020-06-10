@@ -320,31 +320,6 @@
             </objects>
             <point key="canvasLocation" x="934.78260869565224" y="126.5625"/>
         </scene>
-        <!--Next View Controller-->
-        <scene sceneID="jpG-LO-w3e">
-            <objects>
-                <viewController storyboardIdentifier="NextViewController" id="9Ty-0G-kGx" customClass="NextViewController" customModule="gotMyFavorite" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Y76-p7-SrM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MAIN PAGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCY-QB-Flj">
-                                <rect key="frame" x="158" y="407" width="98" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="THf-V9-qcd"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="172-FS-yQJ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fld-d2-aH1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1857" y="127"/>
-        </scene>
     </scenes>
     <resources>
         <image name="logo" width="720" height="720"/>

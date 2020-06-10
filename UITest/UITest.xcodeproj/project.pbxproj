@@ -198,13 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				2C196C782485CFDE00FE8B50 /* Support */,
-				2C196C6424852E4E00FE8B50 /* ColorViewController.swift */,
-				2C196C6624852E4E00FE8B50 /* Main.storyboard */,
-				2C196C7624853DB600FE8B50 /* MediaViewController.swift */,
-				2CC7B27C24877E0900BFC182 /* MediaThemeViewController.swift */,
-				2C196C7B2486425F00FE8B50 /* FoodViewController.swift */,
+				2CEBF12824905CB700C1DBB1 /* getFavorite */,
 				2C196C6924852E4F00FE8B50 /* Assets.xcassets */,
-				2C2E096D2488836C008B7BA1 /* image */,
 				2CC7B27E2487800300BFC182 /* ThemViewController.swift */,
 				2C196C6E24852E4F00FE8B50 /* Info.plist */,
 			);
@@ -371,6 +366,19 @@
 				2C2E09842488836C008B7BA1 /* drama.jpg */,
 			);
 			path = drama;
+			sourceTree = "<group>";
+		};
+		2CEBF12824905CB700C1DBB1 /* getFavorite */ = {
+			isa = PBXGroup;
+			children = (
+				2C196C6424852E4E00FE8B50 /* ColorViewController.swift */,
+				2C196C6624852E4E00FE8B50 /* Main.storyboard */,
+				2C196C7624853DB600FE8B50 /* MediaViewController.swift */,
+				2CC7B27C24877E0900BFC182 /* MediaThemeViewController.swift */,
+				2C196C7B2486425F00FE8B50 /* FoodViewController.swift */,
+				2C2E096D2488836C008B7BA1 /* image */,
+			);
+			path = getFavorite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
