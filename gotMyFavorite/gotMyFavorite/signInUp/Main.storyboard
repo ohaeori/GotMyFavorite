@@ -323,7 +323,6 @@
         <!--Next View Controller-->
         <scene sceneID="jpG-LO-w3e">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fld-d2-aH1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="NextViewController" id="9Ty-0G-kGx" customClass="NextViewController" customModule="gotMyFavorite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y76-p7-SrM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -342,6 +341,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="172-FS-yQJ"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fld-d2-aH1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1857" y="127"/>
         </scene>

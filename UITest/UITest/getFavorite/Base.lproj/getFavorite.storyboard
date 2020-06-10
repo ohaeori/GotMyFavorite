@@ -11,7 +11,7 @@
         <!--Color View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ColorViewController" customModule="gotMyFavorite" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ColorViewController" customModule="gotMyFavorite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,7 +183,7 @@
         <!--Media View Controller-->
         <scene sceneID="Qvk-vG-7h8">
             <objects>
-                <viewController id="kv0-Wa-8LS" customClass="MediaViewController" customModule="UITest" sceneMemberID="viewController">
+                <viewController id="kv0-Wa-8LS" customClass="MediaViewController" customModule="gotMyFavorite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iub-n2-HfX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -345,7 +345,7 @@
         <!--Media Theme View Controller-->
         <scene sceneID="pO8-XD-HdX">
             <objects>
-                <viewController id="gBB-Zd-ocV" customClass="MediaThemeViewController" customModule="UITest" sceneMemberID="viewController">
+                <viewController id="gBB-Zd-ocV" customClass="MediaThemeViewController" customModule="gotMyFavorite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o2h-rs-cvS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -676,7 +676,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="phs-bv-g7M"/>
-        <segue reference="Lkd-Jd-d4l"/>
+        <segue reference="PS9-fu-pAn"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Movie.jpg" width="640" height="433"/>
