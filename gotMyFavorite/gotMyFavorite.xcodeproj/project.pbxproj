@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -76,6 +76,7 @@
 		2CEBF30124907BC600C1DBB1 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBF2C124907BC600C1DBB1 /* ColorViewController.swift */; };
 		2CEBF30224907BC600C1DBB1 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBF2C224907BC600C1DBB1 /* FoodViewController.swift */; };
 		2CEBF306249083AC00C1DBB1 /* 통실통실한.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CEBF305249083AC00C1DBB1 /* 통실통실한.png */; };
+		2CEBF3092490903D00C1DBB1 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 2CEBF3082490903D00C1DBB1 /* SocketIO */; };
 		63033EBF24907FBB00DAD5B8 /* 작은.png in Resources */ = {isa = PBXBuildFile; fileRef = 63033EB824907FBB00DAD5B8 /* 작은.png */; };
 		63033EC024907FBB00DAD5B8 /* 도도한.png in Resources */ = {isa = PBXBuildFile; fileRef = 63033EB924907FBB00DAD5B8 /* 도도한.png */; };
 		63033EC124907FBB00DAD5B8 /* 간이 배 밖으로 나온.png in Resources */ = {isa = PBXBuildFile; fileRef = 63033EBA24907FBB00DAD5B8 /* 간이 배 밖으로 나온.png */; };
@@ -177,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CEBF3092490903D00C1DBB1 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +416,9 @@
 			dependencies = (
 			);
 			name = gotMyFavorite;
+			packageProductDependencies = (
+				2CEBF3082490903D00C1DBB1 /* SocketIO */,
+			);
 			productName = gotMyFavorite;
 			productReference = 2CBF5704247FC4B70093A343 /* gotMyFavorite.app */;
 			productType = "com.apple.product-type.application";
@@ -442,6 +447,9 @@
 				Base,
 			);
 			mainGroup = 2CBF56FB247FC4B70093A343;
+			packageReferences = (
+				2CEBF3072490903D00C1DBB1 /* XCRemoteSwiftPackageReference "socket" */,
+			);
 			productRefGroup = 2CBF5705247FC4B70093A343 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -742,6 +750,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CEBF3072490903D00C1DBB1 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CEBF3082490903D00C1DBB1 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CEBF3072490903D00C1DBB1 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CBF56FC247FC4B70093A343 /* Project object */;
 }

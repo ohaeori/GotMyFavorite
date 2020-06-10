@@ -7,6 +7,8 @@
 //
 
 import UIKit
-class SocketIOManager: NSObject {
+import SocketIO
 
+class SocketIOManager: NSObject {
+    
 }
