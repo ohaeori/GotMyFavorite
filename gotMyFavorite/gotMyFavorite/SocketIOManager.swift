@@ -11,26 +11,26 @@ import SocketIO
 
 class SocketIOManager: NSObject {
     static let shared = SocketIOManager()
-     var manager = SocketManager(socketURL: URL(string: "http://192.168.35.24:9000")!, config: [.log(true), .compress])
+     var manager = SocketManager(socketURL: URL(string: "http://192.168.35.24:54123")!, config: [.log(true), .compress])
      var socket: SocketIOClient!
      override init() {
          super.init()
          socket = self.manager.socket(forNamespace: "/test")
          
-         socket.on("test") { dataArray, ack in
-             print(dataArray)
+         socket.on("favorite") {
+            data, ack in print(data)
          }
      }
 
-     func establishConnection() {
+     func socketConnect() {
          socket.connect()
      }
      
-     func closeConnection() {
+     func socketDisConnect() {
          socket.disconnect()
      }
     
-     func sendMessage(message: String, nickname: String) {
+     func sendMsg(message: String, nickname: String) {
          socket.emit("event",  ["message" : "This is a test message"])
          socket.emit("event1", [["name" : "ns"], ["email" : "@naver.com"]])
          socket.emit("event2", ["name" : "ns", "email" : "@naver.com"])

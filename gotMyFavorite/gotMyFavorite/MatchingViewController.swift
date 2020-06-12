@@ -10,34 +10,18 @@ import UIKit
 import SocketIO
 
 class MatchingViewController: UIViewController {
-
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var message: UITextField!
     var socket: SocketIOClient!
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        SocketIOManager.shared.socketConnect()
     }
-    
-    @IBAction func disconnetSocket(_ sender: Any) {
-        SocketIOManager.shared.closeConnection()
-    }
-    @IBAction func connectSocket(_ sender: Any) {
-        SocketIOManager.shared.establishConnection()
-    }
+
     
     @IBAction func sendData(_ sender: Any) {
-        SocketIOManager.shared.sendMessage(message: self.textField.text!, nickname: "ns")
+        SocketIOManager.shared.sendMsg(message: self.message.text!, nickname: "ns")
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

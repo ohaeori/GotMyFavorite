@@ -336,34 +336,18 @@
                                     <action selector="sendData:" destination="9b1-lr-7sl" eventType="touchUpInside" id="JUg-Ke-EMd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDF-wZ-jgk">
-                                <rect key="frame" x="283" y="165" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="d"/>
-                                <connections>
-                                    <action selector="disconnetSocket:" destination="9b1-lr-7sl" eventType="touchUpInside" id="1Ow-T7-8V4"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BYJ-V0-hlm">
                                 <rect key="frame" x="130" y="474" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XH4-3H-RXa">
-                                <rect key="frame" x="80" y="152" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="c"/>
-                                <connections>
-                                    <action selector="connectSocket:" destination="9b1-lr-7sl" eventType="touchUpInside" id="i9d-zi-JVw"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="LnV-A4-D2L"/>
                     </view>
                     <connections>
-                        <outlet property="textField" destination="BYJ-V0-hlm" id="103-zY-Ph9"/>
+                        <outlet property="message" destination="BYJ-V0-hlm" id="zBh-7a-ARu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J27-Cw-VkT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
