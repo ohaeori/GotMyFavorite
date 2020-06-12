@@ -56,8 +56,8 @@ class SignUpViewController: UIViewController {
         if valid == false {//error message
             showalertMessage(const: 336, mesg: "Fill the blank")
         } else {
-            if inform[2] == inform[3] {
-                User.addUser(id: inform[0], pwd: inform[1], name: inform[2], gender: gender)
+            if inform[1] == inform[2] {
+                User.addUser(id: inform[0], pwd: inform[1], name: inform[3], gender: gender)
                 showalertMessage(const: 336, mesg: "Sign Up Succeed")
             } else {//error message
                 showalertMessage(const: 336, mesg: "Dismatch password")
