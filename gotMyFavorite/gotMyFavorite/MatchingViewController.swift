@@ -22,7 +22,9 @@ class MatchingViewController: UIViewController {
     @IBAction func ModifyFavorite(_ sender: Any) {
         //change StoryBoard
         let storyboard: UIStoryboard = UIStoryboard(name: "getFavorite", bundle: nil)
-        let next = storyboard.instantiateInitialViewController()
+        let next = storyboard.instantiateViewController(withIdentifier: "CVC") as? MatchingViewController
+
+        next?.receivedID = self.receivedID
         next?.modalPresentationStyle = .fullScreen
         next?.modalTransitionStyle = .coverVertical
         self.present(next!, animated: true, completion: nil)
@@ -34,7 +36,8 @@ class MatchingViewController: UIViewController {
 //        if (labelString == "none"){
 //            MatchingBtn.isEnabled = false
 //        }
+        print("dddddd")
+        print(labelString)
         titleLabel.text = labelString
-        idLabel.text = receivedID
-    }
+        idLabel.text = receivedID    }
 }

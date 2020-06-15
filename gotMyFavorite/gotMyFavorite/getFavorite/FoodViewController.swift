@@ -44,13 +44,14 @@ class FoodViewController: UIViewController {
     
     func aaa(on button: UIButton){
         if (mainTitle == "none" && subTitle == "none") {
-            mainTitle = labelString + mediaString + (button.currentTitle ?? "err") + "\n"
+            mainTitle = "  " + labelString + mediaString + (button.currentTitle ?? "err") + "  \n"
         }
         else if(subTitle == "none"){
-            subTitle = "(혹은 " + subString + (button.currentTitle ?? "err") + " 일지도...)"
+            subTitle = "  (혹은 " + subString + (button.currentTitle ?? "err") + " 일지도...)  "
             let nextstoryboard: UIStoryboard? = UIStoryboard(name: "Main", bundle: nil)
             let next = nextstoryboard?.instantiateViewController(withIdentifier: "MatchingViewController") as? MatchingViewController
             next?.receivedID = self.receivedID
+            next?.labelString = mainTitle + subTitle
             next?.modalPresentationStyle = .fullScreen
             next?.modalTransitionStyle = .coverVertical
             self.present(next!, animated: true)
