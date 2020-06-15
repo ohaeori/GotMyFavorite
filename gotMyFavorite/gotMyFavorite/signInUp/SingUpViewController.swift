@@ -69,12 +69,11 @@ class SignUpViewController: UIViewController {
         if(alterMessageLabel.text == "Fill the blank" || alterMessageLabel.text == "Dismatch password"){
             showalertMessage(const: 1000, mesg:"")
         } else {//sign up success
-            //change StoryBoard
-            let storyboard: UIStoryboard = UIStoryboard(name: "getFavorite", bundle: nil)
-            let next = storyboard.instantiateInitialViewController()
-            next?.modalPresentationStyle = .fullScreen
-            next?.modalTransitionStyle = .coverVertical
-            self.present(next!, animated: true, completion: nil)
+            //change ViewController
+            let nextVC = self.storyboard?.instantiateViewController(identifier: "SignInViewController")
+            nextVC?.modalPresentationStyle = .fullScreen
+            nextVC?.modalTransitionStyle = .coverVertical
+            self.present(nextVC!, animated: true, completion: nil)
         }
     }
     

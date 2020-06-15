@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignInViewController: UIViewController {
     /************* variables *************/
     @IBOutlet weak var topContraintHeight: NSLayoutConstraint!
     @IBOutlet weak var logoTopConstraintHeight: NSLayoutConstraint!
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwdTextField: UITextField!
+    
+    var delegate: SendDataDelegate?
     
     /************* actions *************/
     @IBAction func showSignIn(_ sender: Any) { //show & hide sign in pop
@@ -37,13 +39,16 @@ class ViewController: UIViewController {
             let pwd = pwdTextField.text{
             userid = id
             userpwd = pwd
+            //send id data
+            delegate?.sendData(data: id)
         } else {
         }
         
         let signinsuccess = User.isUser(id: userid, pwd: userpwd)
         if(true){//success login . signinsuccess
             //change View
-            let next = self.storyboard?.instantiateViewController(identifier: "MatchingViewController")
+            let nextstoryboard: UIStoryboard? = UIStoryboard(name: "getFavorite", bundle: nil)
+            let next = nextstoryboard?.instantiateInitialViewController()
             next?.modalPresentationStyle = .fullScreen
             next?.modalTransitionStyle = .coverVertical
             self.present(next!, animated: true, completion: nil)
@@ -75,6 +80,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         topContraintHeight.constant = 800
         logoTopConstraintHeight.constant = 225
+    }
+    
+    protocol SendDataDelegate{
+        func sendData(data: String)
     }
     
     /************* keyboard event *************/

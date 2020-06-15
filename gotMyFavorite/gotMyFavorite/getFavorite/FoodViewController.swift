@@ -54,8 +54,8 @@ class FoodViewController: UIViewController {
         }
         else if(subTitle == "none"){
             subTitle = "(혹은 " + subString + (button.currentTitle ?? "err") + " 일지도...)"
-            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let next = storyboard.instantiateInitialViewController()
+            let nextstoryboard: UIStoryboard? = UIStoryboard(name: "Main", bundle: nil)
+            let next = nextstoryboard?.instantiateViewController(identifier: "MatchingViewController")
             next?.modalPresentationStyle = .fullScreen
             next?.modalTransitionStyle = .coverVertical
             self.present(next!, animated: true, completion: nil)
