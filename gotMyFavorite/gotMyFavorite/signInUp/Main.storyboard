@@ -354,6 +354,9 @@
                                     </attributedString>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="matchStart:" destination="9b1-lr-7sl" eventType="touchUpInside" id="AVA-Pm-gZy"/>
+                                </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="RMj-gl-guV">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
@@ -377,7 +380,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="칭호" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRN-jZ-eqe">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="칭호" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRN-jZ-eqe">
                                         <rect key="frame" x="73" y="93" width="328" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.35918039080000003" green="0.31451284889999997" blue="0.83926504850000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -457,6 +460,7 @@
                         <viewLayoutGuide key="safeArea" id="LnV-A4-D2L"/>
                     </view>
                     <connections>
+                        <outlet property="MatchingBtn" destination="csS-9x-jKv" id="i90-sA-kmC"/>
                         <outlet property="idLabel" destination="Eiw-v9-TPR" id="MIL-d1-H5u"/>
                         <outlet property="titleLabel" destination="fRN-jZ-eqe" id="hC9-zt-PEn"/>
                     </connections>

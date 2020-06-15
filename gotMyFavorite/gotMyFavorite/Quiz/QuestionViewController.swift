@@ -104,7 +104,13 @@ class QuestionViewController: UIViewController {
         Quiz.setTitle(str, for: .normal)
         
         if(cntNum == 10){
-            
+            let storyboard: UIStoryboard = UIStoryboard(name: "Quiz", bundle: nil)
+            let next = storyboard.instantiateViewController(withIdentifier: "Result") as? ResultViewController
+
+            next?.score = cntO*10
+            next?.modalPresentationStyle = .fullScreen
+            next?.modalTransitionStyle = .coverVertical
+            self.present(next!, animated: true, completion: nil)
         }
     }
     
