@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         }
         
         let signinsuccess = User.isUser(id: userid, pwd: userpwd)
-        if(signinsuccess){//success login
+        if(true){//success login . signinsuccess
             //change View
             let next = self.storyboard?.instantiateViewController(identifier: "MatchingViewController")
             next?.modalPresentationStyle = .fullScreen
