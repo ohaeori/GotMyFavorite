@@ -15,7 +15,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwdTextField: UITextField!
     
-    var delegate: SendDataDelegate?
+//    var delegate: SendDataDelegate?
     
     /************* actions *************/
     @IBAction func showSignIn(_ sender: Any) { //show & hide sign in pop
@@ -40,7 +40,7 @@ class SignInViewController: UIViewController {
             userid = id
             userpwd = pwd
             //send id data
-            delegate?.sendData(data: id)
+//            delegate?.sendData(data: id)
         } else {
         }
         
@@ -82,10 +82,10 @@ class SignInViewController: UIViewController {
         logoTopConstraintHeight.constant = 225
     }
     
-    protocol SendDataDelegate{
-        func sendData(data: String)
-    }
-    
+//    protocol SendDataDelegate{
+//        func sendData(data: String)
+//    }
+//
     /************* keyboard event *************/
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
           self.view.endEditing(true)

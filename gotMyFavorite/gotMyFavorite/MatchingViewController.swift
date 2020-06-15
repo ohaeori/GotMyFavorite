@@ -31,9 +31,9 @@ class MatchingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         SocketIOManager.shared.socketConnect()
-        if (labelString == "none"){
-            MatchingBtn.isEnabled = false
-        }
+//        if (labelString == "none"){
+//            MatchingBtn.isEnabled = false
+//        }
         titleLabel.text = labelString
     }
 }
