@@ -276,6 +276,9 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="gBB-Zd-ocV" kind="showDetail" identifier="News" id="NeR-j8-JvM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbU-Pq-iYl">
                                                 <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="130.66666666666666"/>
@@ -522,7 +525,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="130.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Chicken" backgroundImage="chicken.jpg">
+                                                <state key="normal" title="치킨" backgroundImage="치킨.jpg">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -534,7 +537,7 @@
                                                 <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="130.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Steak" backgroundImage="steak.jpg">
+                                                <state key="normal" title="스테이크" backgroundImage="스테이크.jpg">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -542,11 +545,10 @@
                                                     <action selector="btn:" destination="FIz-B8-bve" eventType="touchUpInside" id="Yiy-Ar-CYP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgU-qY-5jr">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgU-qY-5jr">
                                                 <rect key="frame" x="254.66666666666671" y="0.0" width="119.33333333333334" height="130.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Yellow">
+                                                <state key="normal" title="라면" backgroundImage="라면.png">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -559,29 +561,26 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-KA-Fhh">
                                         <rect key="frame" x="0.0" y="138.66666666666669" width="374" height="130.66666666666669"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4B9-U6-XQn">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4B9-U6-XQn">
                                                 <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="130.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Green">
+                                                <state key="normal" title="볶음밥" backgroundImage="볶음밥.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPw-Pc-Ib8">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPw-Pc-Ib8">
                                                 <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="130.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Blue">
+                                                <state key="normal" title="떡볶이" backgroundImage="떡볶이.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNe-SO-jly">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNe-SO-jly">
                                                 <rect key="frame" x="254.66666666666671" y="0.0" width="119.33333333333334" height="130.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Indigo">
+                                                <state key="normal" title="짜장면" backgroundImage="짜장면.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -591,11 +590,10 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="caV-E3-3tY">
                                         <rect key="frame" x="0.0" y="277.33333333333337" width="374" height="130.66666666666663"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I62-ab-F2Q">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I62-ab-F2Q">
                                                 <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="130.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Purple">
+                                                <state key="normal" title="초밥" image="초밥.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -604,7 +602,7 @@
                                                 <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="130.66666666666666"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Black">
+                                                <state key="normal" title="피자" backgroundImage="피자.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -613,7 +611,7 @@
                                                 <rect key="frame" x="254.66666666666671" y="0.0" width="119.33333333333334" height="130.66666666666666"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="White">
+                                                <state key="normal" title="파스타" backgroundImage="파스타.png">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -675,12 +673,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="phs-bv-g7M"/>
+        <segue reference="NeR-j8-JvM"/>
         <segue reference="PS9-fu-pAn"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Movie.jpg" width="640" height="433"/>
-        <image name="chicken.jpg" width="640" height="960"/>
         <image name="drama.jpg" width="640" height="427"/>
         <image name="entertainment.jpg" width="640" height="960"/>
         <image name="game.jpg" width="640" height="427"/>
@@ -688,6 +685,14 @@
         <image name="news.jpg" width="640" height="427"/>
         <image name="pet.jpg" width="640" height="377"/>
         <image name="sports.jpg" width="640" height="427"/>
-        <image name="steak.jpg" width="640" height="427"/>
+        <image name="떡볶이.png" width="420" height="318"/>
+        <image name="라면.png" width="498" height="338"/>
+        <image name="볶음밥.png" width="460" height="330"/>
+        <image name="스테이크.jpg" width="640" height="427"/>
+        <image name="짜장면.png" width="420" height="318"/>
+        <image name="초밥.png" width="544" height="354"/>
+        <image name="치킨.jpg" width="640" height="960"/>
+        <image name="파스타.png" width="491" height="477"/>
+        <image name="피자.png" width="491" height="477"/>
     </resources>
 </document>
