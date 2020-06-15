@@ -11,10 +11,13 @@ import SocketIO
 
 class MatchingViewController: UIViewController {
   
-    var labelString: String = ""
+    var labelString: String = "none"
     var socket: SocketIOClient!
     
     @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var MatchingBtn: UIButton!
+    
     @IBAction func ModifyFavorite(_ sender: Any) {
         //change StoryBoard
         let storyboard: UIStoryboard = UIStoryboard(name: "getFavorite", bundle: nil)
@@ -22,11 +25,15 @@ class MatchingViewController: UIViewController {
         next?.modalPresentationStyle = .fullScreen
         next?.modalTransitionStyle = .coverVertical
         self.present(next!, animated: true, completion: nil)
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         SocketIOManager.shared.socketConnect()
+        if (labelString == "none"){
+            MatchingBtn.isEnabled = false
+        }
         titleLabel.text = labelString
     }
 }
