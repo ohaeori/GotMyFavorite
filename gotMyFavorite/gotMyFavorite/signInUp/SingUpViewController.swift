@@ -75,7 +75,6 @@ class SignUpViewController: UIViewController {
             next?.modalPresentationStyle = .fullScreen
             next?.modalTransitionStyle = .coverVertical
             self.present(next!, animated: true, completion: nil)
-            dismiss(animated: false, completion: nil)
         }
     }
     
