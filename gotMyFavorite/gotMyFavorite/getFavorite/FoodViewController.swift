@@ -11,6 +11,7 @@ import UIKit
 class FoodViewController: UIViewController {
     @IBOutlet weak var Label: UILabel!
     
+    var receivedID: String = ""
     var labelString: String = ""
     var mediaString: String = "default"
     var subString: String = " "
@@ -35,7 +36,7 @@ class FoodViewController: UIViewController {
         if let cvc = segue.destination as? MatchingViewController{
             if segue.identifier != nil{
                  cvc.labelString = mainTitle + subTitle
-                 
+                 cvc.receivedID = self.receivedID
              }
          
         }

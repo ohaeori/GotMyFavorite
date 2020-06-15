@@ -31,15 +31,13 @@ class ColorViewController: UIViewController {
         if let cvc = segue.destination as? MediaViewController{
             if let label = segue.identifier{
                 cvc.labelString = color[label]![3.arc4random]
-                
+                cvc.receivedID = self.receivedID
             }
         
        }
     }
     override func viewDidLoad() {
-        super.viewDidLoad()
-        print(self.receivedID)
-    }
+        super.viewDidLoad()    }
 }
 
 extension Int {
