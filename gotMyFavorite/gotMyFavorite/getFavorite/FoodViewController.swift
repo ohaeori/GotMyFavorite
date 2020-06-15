@@ -33,13 +33,6 @@ class FoodViewController: UIViewController {
         if let identifier = segue.identifier {
             print(identifier)
         }
-        if let cvc = segue.destination as? MatchingViewController{
-            if segue.identifier != nil{
-                 cvc.labelString = mainTitle + subTitle
-                 cvc.receivedID = self.receivedID
-             }
-         
-        }
         
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
@@ -56,10 +49,11 @@ class FoodViewController: UIViewController {
         else if(subTitle == "none"){
             subTitle = "(혹은 " + subString + (button.currentTitle ?? "err") + " 일지도...)"
             let nextstoryboard: UIStoryboard? = UIStoryboard(name: "Main", bundle: nil)
-            let next = nextstoryboard?.instantiateViewController(identifier: "MatchingViewController")
+            let next = nextstoryboard?.instantiateViewController(withIdentifier: "MatchingViewController") as? MatchingViewController
+            next?.receivedID = self.receivedID
             next?.modalPresentationStyle = .fullScreen
             next?.modalTransitionStyle = .coverVertical
-            self.present(next!, animated: true, completion: nil)
+            self.present(next!, animated: true)
         }
         
      

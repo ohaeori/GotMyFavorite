@@ -10,13 +10,14 @@ import UIKit
 import SocketIO
 
 class MatchingViewController: UIViewController {
-  
-    var labelString: String = "none"
-    var socket: SocketIOClient!
     
     @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var MatchingBtn: UIButton!
+    
+    var receivedID: String = ""
+    var labelString: String = "none"
+    var socket: SocketIOClient!
     
     @IBAction func ModifyFavorite(_ sender: Any) {
         //change StoryBoard
@@ -30,9 +31,10 @@ class MatchingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         SocketIOManager.shared.socketConnect()
-        if (labelString == "none"){
-            MatchingBtn.isEnabled = false
-        }
+//        if (labelString == "none"){
+//            MatchingBtn.isEnabled = false
+//        }
         titleLabel.text = labelString
+        idLabel.text = receivedID
     }
 }
