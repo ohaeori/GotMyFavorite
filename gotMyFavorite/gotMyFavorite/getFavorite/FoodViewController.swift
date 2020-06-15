@@ -15,7 +15,7 @@ class FoodViewController: UIViewController {
     var mediaString: String = "default"
     var subString: String = " "
     var mainTitle: String = "none"
-    var subTitle: String = " "
+    var subTitle: String = "none"
    
     
     
@@ -32,6 +32,13 @@ class FoodViewController: UIViewController {
         if let identifier = segue.identifier {
             print(identifier)
         }
+        if let cvc = segue.destination as? MatchingViewController{
+            if segue.identifier != nil{
+                 cvc.labelString = mainTitle + subTitle
+                 
+             }
+         
+        }
         
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
@@ -42,13 +49,18 @@ class FoodViewController: UIViewController {
     }
     
     func aaa(on button: UIButton){
-        if (mainTitle == "none") {
+        if (mainTitle == "none" && subTitle == "none") {
             mainTitle = labelString + mediaString + (button.currentTitle ?? "err") + "\n"
         }
-        else {
+        else if(subTitle == "none"){
             subTitle = "(혹은 " + subString + (button.currentTitle ?? "err") + " 일지도...)"
-            Label.text = mainTitle + subTitle
-        }        
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let next = storyboard.instantiateInitialViewController()
+            next?.modalPresentationStyle = .fullScreen
+            next?.modalTransitionStyle = .coverVertical
+            self.present(next!, animated: true, completion: nil)
+        }
+        
      
     }
     

@@ -11,8 +11,10 @@ import SocketIO
 
 class MatchingViewController: UIViewController {
   
+    var labelString: String = ""
     var socket: SocketIOClient!
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBAction func ModifyFavorite(_ sender: Any) {
         //change StoryBoard
         let storyboard: UIStoryboard = UIStoryboard(name: "getFavorite", bundle: nil)
@@ -25,5 +27,6 @@ class MatchingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         SocketIOManager.shared.socketConnect()
+        titleLabel.text = labelString
     }
 }

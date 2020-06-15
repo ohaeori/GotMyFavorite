@@ -453,6 +453,9 @@
                         <color key="backgroundColor" red="0.69812327620000003" green="0.77702957390000005" blue="0.91766893859999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="LnV-A4-D2L"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="Eiw-v9-TPR" id="EM7-5A-OdC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J27-Cw-VkT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
