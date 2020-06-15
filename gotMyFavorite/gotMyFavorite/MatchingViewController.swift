@@ -46,6 +46,10 @@ class MatchingViewController: UIViewController {
         }
     }
     @IBAction func matchStart(_ sender: UIButton) {
+        
+        SocketIOManager.shared.socketConnect()
+        SocketIOManager.shared.sendMsg(message: <#T##String#>, nickname: receivedID)
+        
         let storyboard: UIStoryboard = UIStoryboard(name: "Quiz", bundle: nil)
         let next = storyboard.instantiateViewController(withIdentifier: "Quiz") as? QuestionViewController
 
