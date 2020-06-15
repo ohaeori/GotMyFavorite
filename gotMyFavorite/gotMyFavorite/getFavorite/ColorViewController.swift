@@ -10,6 +10,7 @@ import UIKit
 
 class ColorViewController: UIViewController {
 
+    var receivedID: String = ""
     var labelString: String = ""
     var count = arc4random_uniform(2)
     var color : [String:[String]] = [
@@ -35,8 +36,10 @@ class ColorViewController: UIViewController {
         
        }
     }
-
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print(self.receivedID)
+    }
 }
 
 extension Int {

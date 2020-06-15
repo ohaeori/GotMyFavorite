@@ -15,8 +15,6 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwdTextField: UITextField!
     
-//    var delegate: SendDataDelegate?
-    
     /************* actions *************/
     @IBAction func showSignIn(_ sender: Any) { //show & hide sign in pop
         if(topContraintHeight.constant == 288){//hide
@@ -39,8 +37,6 @@ class SignInViewController: UIViewController {
             let pwd = pwdTextField.text{
             userid = id
             userpwd = pwd
-            //send id data
-//            delegate?.sendData(data: id)
         } else {
         }
         
@@ -48,10 +44,13 @@ class SignInViewController: UIViewController {
         if(true){//success login . signinsuccess
             //change View
             let nextstoryboard: UIStoryboard? = UIStoryboard(name: "getFavorite", bundle: nil)
-            let next = nextstoryboard?.instantiateInitialViewController()
-            next?.modalPresentationStyle = .fullScreen
-            next?.modalTransitionStyle = .coverVertical
-            self.present(next!, animated: true, completion: nil)
+            guard let next = nextstoryboard?.instantiateViewController(withIdentifier: "CVC") as? ColorViewController else {
+                return
+            }
+            next.receivedID = self.idTextField.text!
+            next.modalPresentationStyle = .fullScreen
+            next.modalTransitionStyle = .coverVertical
+            self.present(next, animated: true)
         } else {//fail login
             UIView.animate(withDuration: 0.05, animations: {
                 self.idTextField.frame.origin.x -= 10
@@ -82,10 +81,6 @@ class SignInViewController: UIViewController {
         logoTopConstraintHeight.constant = 225
     }
     
-//    protocol SendDataDelegate{
-//        func sendData(data: String)
-//    }
-//
     /************* keyboard event *************/
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
           self.view.endEditing(true)
