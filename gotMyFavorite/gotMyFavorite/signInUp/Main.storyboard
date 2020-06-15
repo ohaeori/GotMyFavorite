@@ -423,6 +423,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ModifyFavorite:" destination="9b1-lr-7sl" eventType="touchUpInside" id="YDs-Bv-uiv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fe-n8-6ej">
                                         <rect key="frame" x="219" y="46" width="170" height="40"/>

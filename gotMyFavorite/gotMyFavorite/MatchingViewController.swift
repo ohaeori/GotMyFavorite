@@ -10,18 +10,20 @@ import UIKit
 import SocketIO
 
 class MatchingViewController: UIViewController {
-    @IBOutlet weak var message: UITextField!
+  
     var socket: SocketIOClient!
     
-
+    @IBAction func ModifyFavorite(_ sender: Any) {
+        //change StoryBoard
+        let storyboard: UIStoryboard = UIStoryboard(name: "getFavorite", bundle: nil)
+        let next = storyboard.instantiateInitialViewController()
+        next?.modalPresentationStyle = .fullScreen
+        next?.modalTransitionStyle = .coverVertical
+        self.present(next!, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         SocketIOManager.shared.socketConnect()
-    }
-
-    
-    @IBAction func sendData(_ sender: Any) {
-        SocketIOManager.shared.sendMsg(message: self.message.text!, nickname: "ns")
     }
 }
