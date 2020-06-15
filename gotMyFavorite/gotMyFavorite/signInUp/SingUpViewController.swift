@@ -70,11 +70,10 @@ class SignUpViewController: UIViewController {
             showalertMessage(const: 1000, mesg:"")
         } else {//sign up success
             //change StoryBoard
-            let storyboard: UIStoryboard = UIStoryboard(name: "getFavorite", bundle: nil)
-            let next = storyboard.instantiateInitialViewController()
-            next?.modalPresentationStyle = .fullScreen
-            next?.modalTransitionStyle = .coverVertical
-            self.present(next!, animated: true, completion: nil)
+            let newVC = self.storyboard?.instantiateViewController(identifier: "SignInViewController")
+            newVC?.modalPresentationStyle = .fullScreen
+            newVC?.modalTransitionStyle = .coverVertical
+            self.present(newVC!, animated: true, completion: nil)
         }
     }
     
